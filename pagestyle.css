@@ -139,7 +139,7 @@ body{
 .social a{color:var(--muted); text-decoration:none}
 .social a:hover{color:var(--text)}
 .hero-image{
-  width: max(92%, var(--container));
+ 
 }
 .avatar{
   width:min(320px, 70vw); aspect-ratio:1/1; border-radius: var(--radius-lg);
