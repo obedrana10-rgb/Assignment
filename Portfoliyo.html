@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pagestyle.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="Login_1.html"><span>P</span>ortfolio</a>
+
+      <!-- Mobile Nav Toggle (CSS-only) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a class="btn btn--sm" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+  <div class="container hero-wrap">
+    <div class="hero-text">
+      <h1>What is Full stack development?</h1>
+      <p>
+        Full Stack Development is the process of developing 
+        both the front end (client side) and back end (server side)
+        of a web application. The If you learn full stack development 
+        you will also be able to create powerful websites from scratch.
+      </p>
+    </div>
+    <div class="hero-image">
+      <div class="avatar" role="img" aria-label="Portrait placeholder"></div>
+    </div>
+  </div>
+</section>
+
+  <br><br><br><br><br><br><br><br><br><br><br>
+
+  <!-- Services -->
+  <section id="services" class="section section--alt">
+    <div class="link-container">
+      <h3 class="section-title center">What I Do</h3>
+      <div class="page links">
+        <article class="link">
+          <img src="html5-with-wordmark-color-logo-png_seeklogo-224332.png" alt="">
+          <h4>HTML</h4>
+          <p>Pixel-perfect, responsive interfaces with semantic HTML and CSS.</p>
+          <div class="htmlpage-link">
+          <a class="btn1" href="htmlpage.html">Get started</a>
+          </div>
+        </article>
+        <article class="link">
+          <img src="css3-logo-png_seeklogo-186678.png" alt="">
+          <h4>CSS</h4>
+          <p>Optimize Core Web Vitals, bundle sizes, and perceived speed.</p>
+          <div class="htmlpage-link">
+          <a class="btn1" href="Csspage.html">Get started</a>
+          </div>
+        </article>
+        <article class="link">
+          <img src="java-script-js-logo-png_seeklogo-303341.png" alt="">
+          <h4>Javascript</h4>
+          <p>Reusable components, tokens, and accessible patterns.</p>
+          <div class="htmlpage-link">
+          <a class="btn1" href="Javascriptpage.html">Get started</a>
+          </div>
+        </article>
+        <article class="link">
+          <img src="bootstrap-logo-png_seeklogo-272883.png" alt="">
+          <h4>Bootstrap Framework</h4>
+          <p>Reusable components, tokens, and accessible patterns.</p>
+          <div class="htmlpage-link">
+          <a class="btn1" href="bootstrap.html">Get started</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact -->
+  <section id="contact" class="section section--alt">
+    <div class="container two-col">
+      <div>
+        <h3 class="section-title">Contact us</h3>
+        <p>Tell us about websites problems you facing or need help—I'll get back within 24 hours.</p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> obedrana10@gmail.com</li>
+          <li><strong>Location:</strong> Butwal-07, Rupandehi</li>
+        </ul>
+      </div>
+      <form class="contact-form" action="#" method="post" onsubmit="return false;">
+        <label>
+          Name
+          <input type="text" placeholder="Your full name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" placeholder="you@gmail.com" required>
+        </label>
+        <label>
+          Message
+          <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+        </label>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
