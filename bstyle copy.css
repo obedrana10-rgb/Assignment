@@ -1,0 +1,92 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #fc3025);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Form container */
+  form {
+    background: #fff;
+    padding: 18px 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    width: 280px;          /* smaller width */
+  }
+  
+  /* Labels */
+  label {
+    font-weight: bold;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 12px;
+    transition: border 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #2575fc;
+    outline: none;
+  }
+  
+  /* Range slider */
+  input[type="range"] {
+    width: 100%;
+    margin: 6px 0;
+  }
+  
+  output {
+    font-weight: bold;
+    margin-left: 6px;
+    font-size: 13px;
+    color: #2575fc;
+  }
+  
+  /* Radio + checkbox */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1);
+  }
+  
+  /* Button */
+  button {
+    width: 60%;
+    padding: 9px;
+    background: #2575fc;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #1a5ed1;
+  }
+  
+  /* Textarea */
+  textarea {
+    resize: none;
+    font-size: 13px;
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="bstyle copy.css">
+</head>
+<body>
+  <form>
+    <div>
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required> <!--required pani gar na milxa-->
+    <br><br>
+ 
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <br><br>
+
+    <!-- Age (scroll bar 18–60) -->
+    <label for="age">Age:</label>
+    <input type="range" id="age" name="age" min="18" max="60" value="18" oninput="ageOutput.value = age.value">
+    <output id="ageOutput">18</output>
+    <br><br>
+   
+    <!--checkbox for multipal option and radio for only one option-->
+    <!-- Courses (radio options) -->
+    <label>Course:</label><br>
+    <input type="radio" id="math" name="course" value="math">
+    <label for="math">Mathematics</label><br>
+
+    <input type="radio" id="science" name="course" value="science">
+    <label for="science">Science</label><br>
+
+    <input type="radio" id="history" name="course" value="history">
+    <label for="history">History</label><br>
+
+    <input type="radio" id="english" name="course" value="english">
+    <label for="english">English</label><br>
+
+    <input type="radio" id="computer" name="course" value="computer">
+    <label for="computer">Computer</label>
+    <br><br>
+
+    <!-- Message box -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" rows="4" cols="30"  name = "message" placeholder="Write your message..."></textarea>
+    <br><br>
+
+    <!-- Checkbox -->
+    <input type="checkbox" id="agree" name="agree" required>
+    <label for="agree">I agree to the focus and auditions</label>
+    <br><br>
+
+    <!-- Submit button -->
+    <button type="submit">Click me</button>
+  </form>
+  <script src="bscript.js"></script>
+</body>
+</html>
+
+<!--date ra calender-->

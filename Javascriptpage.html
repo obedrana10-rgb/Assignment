@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background:
+    radial-gradient(10000px 10000px at 100% , rgb(1, 15, 37), transparent 60%),
+    var(--bg);
+      line-height: 1.6;
+    }
+   button{
+     display:inline-block;
+  padding:12px 18px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color:#071018; border:none; border-radius:12px; font-weight:700;
+  text-decoration:none; box-shadow: var(--shadow);
+  transition: transform .08s ease;
+}
+button:hover{
+    border: 1px solid tomato;
+    background: tomato;
+}
+  </style>
+</head>
+<body class="js-page">
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="fullstack.html"><span>P</span>ortfolio</a>
+
+      <!-- Mobile Nav Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav">
+        <a href="#intro">Introduction</a>
+        <a href="#variables">Variables</a>
+        <a href="#operators">Operators</a>
+        <a href="#functions">Functions</a>
+        <a href="#events">Events</a>
+        <a href="#dom">DOM</a>
+        <a href="#examples">Examples</a>
+       
+      </nav>
+    </div>
+  </header>
+
+  <main class="js-main">
+
+    <!-- Intro Section -->
+    <section id="intro">
+      <h2>What is JavaScript?</h2>
+      <p><strong>JavaScript</strong> is a high-level, versatile programming language that powers the interactive behavior of websites. While HTML structures the page and CSS styles it, JavaScript makes it come alive by:</p>
+      <ul>
+        <li>Updating and changing both HTML and CSS.</li>
+        <li>Reacting to user actions like clicks, scrolls, or typing.</li>
+        <li>Fetching data from servers (AJAX / APIs).</li>
+        <li>Building full web applications (with frameworks like React, Angular, Vue).</li>
+      </ul>
+      <p>Every modern browser has a built-in JavaScript engine (e.g., Chrome’s V8) to run scripts quickly.</p>
+    </section>
+
+    <!-- Variables Section -->
+    <section id="variables">
+      <h2>Variables in JavaScript</h2>
+      <p>Variables are used to store data values. In JavaScript, you can declare variables in three ways:</p>
+      <ul>
+        <li><code>var</code> – the old way (function-scoped, can be redeclared).</li>
+        <li><code>let</code> – the modern way (block-scoped, can be reassigned).</li>
+        <li><code>const</code> – block-scoped but cannot be reassigned (constant values).</li>
+      </ul>
+
+      <h3>Examples</h3>
+      <pre>
+var city = "Kathmandu";   // function-scoped
+let age = 22;             // block-scoped
+const PI = 3.14159;       // constant, cannot be changed
+      </pre>
+
+      <p>Variables can store different types of data, such as:</p>
+      <ul>
+        <li><strong>String</strong>: text data (<code>"Hello"</code>)</li>
+        <li><strong>Number</strong>: integers or decimals (<code>25</code>, <code>3.14</code>)</li>
+        <li><strong>Boolean</strong>: true/false values</li>
+        <li><strong>Array</strong>: list of values (<code>[1, 2, 3]</code>)</li>
+        <li><strong>Object</strong>: key-value pairs (<code>{name: "Obed", age: 25}</code>)</li>
+      </ul>
+
+      <button onclick="showVariables()">Show Variables</button>
+      <p id="variable-output"></p>
+    </section>
+
+    <!-- Operators Section -->
+    <section id="operators">
+      <h2>Operators</h2>
+      <p>Operators are symbols used to perform operations on values and variables:</p>
+      <ul>
+        <li><strong>Arithmetic</strong>: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+        <li><strong>Comparison</strong>: <code>==</code>, <code>===</code>, <code>></code>, <code><</code></li>
+        <li><strong>Logical</strong>: <code>&&</code>, <code>||</code>, <code>!</code></li>
+      </ul>
+      <pre>
+let a = 10, b = 5;
+let sum = a + b;
+      </pre>
+      <button onclick="showOperators()">Show Operators</button>
+      <p id="operator-output"></p>
+    </section>
+
+    <!-- Functions Section -->
+    <section id="functions">
+      <h2>Functions</h2>
+      <p>Functions are reusable blocks of code that perform a specific task. They help avoid repetition and keep code organized.</p>
+      <pre>
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+      </pre>
+      <button onclick="showFunctionExample()">Run Function</button>
+      <p id="function-output"></p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+      <h2>JavaScript Events</h2>
+      <p>Events are actions that happen in the browser, like a user clicking a button, moving the mouse, or pressing a key. JavaScript can listen for these events and respond.</p>
+      <pre>
+&lt;button onclick="showDate()"&gt;Show Date&lt;/button&gt;
+      </pre>
+      <button onclick="showDate()">Show Date</button>
+      <p id="date-area"></p>
+    </section>
+
+    <!-- DOM Section -->
+    <section id="dom">
+      <h2>JavaScript and the DOM</h2>
+      <p>The <strong>DOM (Document Object Model)</strong> is a representation of the web page structure. JavaScript can access and manipulate the DOM to dynamically update content.</p>
+      <pre>
+document.getElementById("demo").innerHTML = "Hello, JS!";
+      </pre>
+      <button onclick="changeText()">Change Text</button>
+      <p id="demo">This text can be changed with JS.</p>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples">
+      <h2>More JavaScript Examples</h2>
+
+      <!-- Alert Example -->
+      <h3>Alert Example</h3>
+      <p>The <code>alert()</code> function shows a popup box with a message.</p>
+      <pre>
+function showAlert() {
+  alert("Hello! This is a JavaScript alert.");
+}
+      </pre>
+      <button onclick="showAlert()">Show Alert</button>
+
+      <!-- Console Example -->
+      <h3>Console Example</h3>
+      <p>You can use <code>console.log()</code> to print messages for debugging inside the browser console (press F12 to see).</p>
+      <pre>
+function logMessage() {
+  console.log("This message was logged using JavaScript.");
+}
+      </pre>
+      <button onclick="logMessage()">Log to Console</button>
+      <p id="console-output"></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2025, Obed Rana. All rights reserved.</p>
+      <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

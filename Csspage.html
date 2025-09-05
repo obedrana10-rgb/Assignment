@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="css-page">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="fullstack.html"><span>P</span>ortfolio</a>
+
+      <!-- Mobile Nav Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#intro">Introduction</a>
+        <a href="#syntax">Syntax</a>
+        <a href="#types">Types</a>
+        <a href="#examples">Examples</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="css-main">
+
+    <!-- Intro -->
+    <section id="intro">
+      <h2>What is CSS?</h2>
+      <p><strong>CSS</strong> stands for <em>Cascading Style Sheets</em>. It is used to style and layout web pages, including colors, fonts, and spacing.</p>
+      <p>CSS separates content from design, making web development more efficient.</p>
+    </section>
+
+    <!-- Syntax -->
+    <section id="syntax">
+      <h2>Basic CSS Syntax</h2>
+      <pre>
+selector {
+  property: value;
+}
+      </pre>
+      <p>The <code>selector</code> points to the HTML element you want to style.  
+      Inside the block, each <code>property</code> is followed by a <code>value</code>.</p>
+    </section>
+
+    <!-- Types -->
+    <section id="types">
+      <h2>Ways to Add CSS</h2>
+      <ul>
+        <li><strong>Inline CSS</strong> – directly in the HTML element using the <code>style</code> attribute.</li>
+        <li><strong>Internal CSS</strong> – inside a <code>&lt;style&gt;</code> tag in the HTML <code>&lt;head&gt;</code>.</li>
+        <li><strong>External CSS</strong> – in a separate file (like <code>style.css</code>) linked with <code>&lt;link&gt;</code>.</li>
+      </ul>
+    </section>
+
+    <!-- Examples -->
+    <section id="examples">
+      <h2>Examples of CSS</h2>
+
+      <h3>1. Changing Text Color</h3>
+      <pre>
+p {
+  color: blue;
+}
+      </pre>
+
+      <h3>2. Styling Background</h3>
+      <pre>
+body {
+  background-color: lightgray;
+}
+      </pre>
+
+      <h3>3. Adding Borders</h3>
+      <pre>
+div {
+  border: 2px solid black;
+}
+      </pre>
+
+      <h3>4. Changing Fonts</h3>
+      <pre>
+h1 {
+  font-family: Verdana, sans-serif;
+  font-size: 28px;
+}
+      </pre>
+
+      <h3>5. Adding Padding and Margin</h3>
+      <pre>
+.box {
+  padding: 20px;
+  margin: 10px;
+  background: white;
+}
+      </pre>
+
+      <h3>6. Hover Effect</h3>
+      <pre>
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+      </pre>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2025, Obed Rana. All rights reserved.</p>
+      <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>

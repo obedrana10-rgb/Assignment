@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="html-page">
+
+  <header class="site-header">
+  <div class="container header-wrap">
+    <a class="brand" href="fullstack.html"><span>P</span>ortfolio</a>
+
+    <!-- Mobile Nav Toggle (CSS-only) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+    <label for="nav-toggle" class="hamburger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav">
+      <a href="#intro">Introduction</a>
+      <a href="#structure">Structure</a>
+      <a href="#features">Features</a>
+      <a href="#examples">Examples</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="html-main">
+  <!-- Intro Section -->
+  <section id="intro">
+    <h2>What is HTML?</h2>
+    <p><strong>HTML</strong> stands for <em>HyperText Markup Language</em>. It is the standard markup language used to create web pages. HTML elements tell the browser how to display content.</p>
+    <p>HTML documents are made up of tags and attributes that define headings, paragraphs, links, images, and more.</p>
+  </section>
+
+  <!-- Structure Section -->
+  <section id="structure">
+    <h2>Basic HTML Document Structure</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    <p>This is the simplest HTML5 template. Every page starts with <code>&lt;!DOCTYPE html&gt;</code>, followed by the <code>&lt;html&gt;</code> element as the root.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Main Features of HTML</h2>
+    <ul>
+      <li>Defines the structure of a web page.</li>
+      <li>Supports text, images, links, videos, and forms.</li>
+      <li>Works with CSS and JavaScript to create interactive and styled pages.</li>
+      <li>Uses elements and tags enclosed in angle brackets (&lt; &gt;).</li>
+    </ul>
+  </section>
+
+  <!-- Examples Section -->
+  <section id="examples">
+    <h2>Examples of Common HTML Tags</h2>
+    <h3>Headings</h3>
+    <p>Headings are defined with <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags:</p>
+    <pre>
+&lt;h1&gt;This is Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is Heading 2&lt;/h2&gt;
+    </pre>
+
+    <h3>Paragraph and Links</h3>
+    <pre>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="http://127.0.0.1:5501/fullstack.html"&gt;fullstack&lt;/a&gt;
+    </pre>
+
+    <h3>Image Example</h3>
+    <pre>
+&lt;img src="image.jpg" alt="Description"&gt;
+    </pre>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>© 2025, Obed Rana. All rights reserved.</p>
+    <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+  </div>
+</footer>
+
+</body>
+</html>
